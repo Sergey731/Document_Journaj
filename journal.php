@@ -10,7 +10,7 @@
 
 	$marker = 'C:\Users\home\workspace\PhpProjects\Document_Journal\texts';
 	$storage = [];
-		
+
 	foreach (glob('C:\Users\home\workspace\PhpProjects\Document_Journal\texts\*.txt') as $file)			
 		 	array_push($storage, $file);		 	
 		
@@ -23,14 +23,6 @@
 	
 	    $len = count($storage);
 	    echo "В папке " . $len . " документа(ов).";
-
-
-
-
-
-
-
-
 	?>	
 </body>
 </html>
