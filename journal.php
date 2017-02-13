@@ -12,17 +12,17 @@ $dir = dirname(__FILE__);
 $files_url = 'texts';
 $marker = "$dir/$files_url";
 
-foreach (glob($marker . '/*.txt') as $file){         
-        $storage[] = $file;     
-    }
-    echo '<ul>';        
-    for ($i = 0; $i < count($storage); $i++) {
-        $file_name = basename($storage[$i]);        
-        echo '<li>';
-            echo "<a href=\"$files_url/$file_name\">$file_name</a>"; 
-        echo '</li>';        
-    }
-    echo '</ul>';
+foreach (glob($marker . '/*.txt') as $file) {         
+    $storage[] = $file;     
+}
+echo '<ul>';        
+for ($i = 0; $i < count($storage); $i++) {
+    $file_name = basename($storage[$i]);        
+    echo '<li>';
+        echo "<a href=\"$files_url/$file_name\">$file_name</a>"; 
+    echo '</li>';        
+}
+echo '</ul>';
 
 $len = count($storage);
 echo "В папке $len документа(ов).";
